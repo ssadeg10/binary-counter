@@ -15,23 +15,23 @@ output reg [6:0] d	// 7-seg
 	wire [3:0] f = {s3,s2,s1,s0};
 
 	// Bits for each 7-seg pin to display correct value
-	localparam 	ZERO	= 7'b1000000,
-				ONE		= 7'b1111001,
-				TWO		= 7'b0100100,
-				THREE	= 7'b0110000,
-				FOUR	= 7'b0011001,
-				FIVE	= 7'b0010010,
-				SIX		= 7'b0000010,
-				SEVEN	= 7'b1111000,
-				EIGHT	= 7'b0000000,
-				NINE	= 7'b0011000,
-				A		= 7'b0001000,
-				B		= 7'b0000011,
-				C		= 7'b1000110,
-				D		= 7'b0100001,
-				E		= 7'b0000100,
-				F		= 7'b0001110,
-				OFF		= 7'b1111111;
+	localparam ZERO		= 7'b1000000,
+		   ONE		= 7'b1111001,
+		   TWO		= 7'b0100100,
+		   THREE	= 7'b0110000,
+		   FOUR		= 7'b0011001,
+		   FIVE		= 7'b0010010,
+		   SIX		= 7'b0000010,
+		   SEVEN	= 7'b1111000,
+		   EIGHT	= 7'b0000000,
+		   NINE		= 7'b0011000,
+		   A		= 7'b0001000,
+		   B		= 7'b0000011,
+		   C		= 7'b1000110,
+		   D		= 7'b0100001,
+		   E		= 7'b0000100,
+		   F		= 7'b0001110,
+		   OFF		= 7'b1111111;
 	
 	// Output on switches --> set display
 	always @(f) begin
