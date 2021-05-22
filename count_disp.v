@@ -12,9 +12,7 @@ input wire [3:0] s,	// switches
 output reg [6:0] d,	// 7-seg
 output reg [9:0] l	// LEDs
 );
-	// Concat switches to 4-bit wire f
-	//wire [3:0] f = {s3,s2,s1,s0};
-	
+
 	// LEDs initially logic 0
 	initial begin
 		l = 10'b0;
